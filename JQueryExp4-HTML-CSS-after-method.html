@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+function afterText() {
+var text1 = "<br><b>I </b>";                   
+var text2 = $("<i></i>").text("like ");   
+var text3 = document.createElement("b");   
+    text3.innerHTML = "programming!";
+    $("img").after(text1, text2, text3);      
+}
+</script>
+</head>
+<body>
+<br>
+<img src="whatwethinkwebecome.jpg" alt="jQuery" width="400" height="340"> <br>
+</body></html>
+<br>
+<p>Double click the button to insert text after the image.</p><br>
+
+<button ondblclick="afterText()">Insert after</button>
+
+</body>
+</html>
